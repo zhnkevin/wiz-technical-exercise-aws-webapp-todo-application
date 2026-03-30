@@ -14,7 +14,7 @@ COPY --from=build  /go/src/tasky/tasky .
 COPY --from=build  /go/src/tasky/assets ./assets
 EXPOSE 8080
 
-COPY wizexercise.txt /app/wiz/wizexercise.txt
+COPY wizexercise.txt wizexercise.txt
 
 ENTRYPOINT ["/app/tasky"]
 
